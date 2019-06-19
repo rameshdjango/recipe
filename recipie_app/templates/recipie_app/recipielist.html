@@ -1,0 +1,10 @@
+{% if recipie_list %}
+    <ul>
+    {% for recpie in recipie_list %}
+        <li><a href="/recipie_app/{{ recipie.id }}/">{{recipie.recipie_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No recepiese are available.</p>
+{% endif %}
+<a href="{% url 'recipie_app:create' %}"> create recepie</a>

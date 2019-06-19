@@ -1,0 +1,7 @@
+<form action="{% url 'recipie_app:create' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    recepie_name = <input type="text" name="recepie_name"><br><br>
+    process = <input type="text" name="process"><br><br>
+    ingredients =<input type="text" name ="ingredients"><br><br>
+
+</form>
